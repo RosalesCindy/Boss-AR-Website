@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Boss AR Clo.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+
+
+<!--- header --->
+
+<section id="header">
+  <a href=""><img src="Img/logo.jpg"></a>
+  
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+            <li>
+            <a href="#">Shop</a>
+            <ul id="dropdown-shop" class="dropdown">
+              <li><a href="Caps.html">Caps</a></li>
+              <li><a href="jackets.html">Jackets</a></li>
+              <li><a href="shirts.html">Shirts</a></li>
+              <li><a href="shoes.html">Shoes</a></li>
+              <li><a href="shorts.html">Short</a></li>
+              <li><a href="socks.html">Socks</a></li>            
+           </ul>
+         </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+        <li><a class="active" href="review.html">Review</a></li>        
+        <li id="sp-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+        <li id="mf-glass"><a href="index.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+  <div id="mobile">
+      <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+      <a href="index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+  </div>  
+</section>
+
+ 
+
+
+<section id="review-header" >
+      <h1>#CustomerReviews</h1>
+</section>
+
+
+
+<section class="review">
+<div class="container">
+        
+        <div class="slide-container active">
+              <div class="slide">
+                <i class="fa-solid fa-quote-right icon"></i>
+                  <div class="user">
+                      <img src="Img/profile/p1.jpg">
+                      <div class="user-info">
+                            <h3>Anonymous1</h3>
+                            <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                            </div>
+                      </div>
+                  </div>
+                  <p class="text">Thank you, ang ganda😍!!!</p>
+              </div>
+        </div>
+        <div class="slide-container">
+              <div class="slide">
+                <i class="fa-solid fa-quote-right icon"></i>
+                  <div class="user">
+                      <img src="Img/profile/p2.jpg">
+                      <div class="user-info">
+                            <h3>Anonymous2</h3>
+                            <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                            </div>
+                      </div>
+                  </div>
+                  <p class="text">Ang angas, ganda ng tela.</p>
+              </div>
+        </div>
+        <div class="slide-container">
+              <div class="slide">
+                <i class="fa-solid fa-quote-right icon"></i>
+                  <div class="user">
+                      <img src="Img/profile/p3.jpg">
+                      <div class="user-info">
+                            <h3>Anonymous3</h3>
+                            <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                            </div>
+                      </div>
+                  </div>
+                  <p class="text">Niceee!! Ang ganda  priii.</p>
+              </div>
+        </div>
+
+
+    <div id="next" class="fa-solid fa-chevron-right" onclick="next()"></div>
+    <div id="prev" class="fa-solid fa-chevron-left" onclick="prev()"></div>
+
+
+</div>
+</section>
+
+
+
+<script>
+
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}
+
+function prev(){
+  slides[index].classList.remove('active');
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add('active');
+}
+</script>
+
+
+
+
+
+
+<footer class="section-p1">
+  <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Matuyatuya, Torrijos, Marinduque</p>
+      <p><strong>Phone:</strong> 09079566255</p>
+      <p><strong>Hours:</strong> 8:00 - 5:00, Mon - Sat</p>
+      <div class="follow">
+           <h4>Follow us</h4>
+           <div class="icon">
+               <i class="fa-brands fa-square-facebook"></i>
+               <i class="fa-brands fa-square-instagram"></i>
+               <i class="fa-brands fa-square-x-twitter"></i>
+               <i class="fa-brands fa-tiktok"></i>
+           </div>
+      </div>
+  </div>
+
+ <div class="col">
+     <h4>About</h4>
+     <a href="">About us</a>
+     <a href="">Delivery Information</a>
+     <a href="">Privacy & Policy</a>
+     <a href="">Terms & Condition</a>
+     <a href="">Contact us</a>
+ </div>
+
+
+
+ <div class="col">
+     <h4>My Account</h4>
+     <a href="">Sign In</a>
+     <a href="">View Cart</a>
+     <a href="">My Wishlist</a>
+     <a href="">Track My Order</a>
+     <a href="">Help</a>
+ </div>
+
+
+ <div class="col install">
+   <h4>Install App</h4>
+   <p>From App Store or Google Play</p>
+      <div class="row">
+         <img src="Img/pay/app.jpg">
+         <img src="Img/pay/play.jpg">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="Img/pay/pay.png">
+ </div>
+
+
+<div class="copyright">
+  <p>© 2023, Made with <i class="fa-regular fa-heart"></i> by Cindy</p>
+</div>
+
+</footer> 
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
